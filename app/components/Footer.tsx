@@ -17,16 +17,16 @@ export default function Footer() {
                     </div>
                     <div className={"flex gap-6 items-center flex-col mb-8 md:flex-row"}>
                         <nav className={"flex flex-col gap-6 text-[#f4f4f4]"}>
-                            <Link href="/" className={"no-underline text-[#f4f4f4] w-fit"}>About Us</Link>
+                            <Link href="#" className={"no-underline text-[#f4f4f4] w-fit"}>About Us</Link>
                             <Link href="#faq" className={"no-underline text-[#f4f4f4] w-fit"}>FAQs</Link>
-                            <Link href="/" className={"no-underline text-[#f4f4f4] w-fit"}>Blog</Link>
+                            <Link href="#" className={"no-underline text-[#f4f4f4] w-fit"}>Blog</Link>
                         </nav>
                         <nav className={"flex flex-col gap-6 text-[#f4f4f4]"}>
                             <Link href="mailto:info@dinero-billpay.com" className={"no-underline text-[#f4f4f4] w-fit"}>
                                 info@dinero-billpay.com
                             </Link>
-                            <Link href="tel:+2348072758288" className={"no-underline text-[#f4f4f4] w-fit"}>
-                                +234 807 275 8288
+                            <Link href="tel:+2349066032718" className={"no-underline text-[#f4f4f4] w-fit"}>
+                                +234 916 603 2718
                             </Link>
                         </nav>
                         <div className={"flex flex-col gap-6 text-[#f4f4f4]"}>
@@ -78,7 +78,7 @@ export default function Footer() {
 
             <div className={"border-solid border-2 border-white py-4 px-[5vw] flex items-center justify-between"}>
                 <p className={"text-[14px]/5 text-white"}>
-                    ©2024. Dinero-BillPay Ltd.
+                    ©2024. Dinero Technologies Ltd.
                 </p>
                 <nav className={"flex gap-4 items-center"}>
                     <Link className={"text-white"} href="/terms">

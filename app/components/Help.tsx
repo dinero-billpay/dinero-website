@@ -90,43 +90,46 @@ export default function Help() {
     },
   ];
 
+  const moreFaqData = [
+    {
+      question: "What is Dinero-Bill Pay?",
+      answer: "Dinero-Bill Pay is a payment platform that allows users to easily pay their utility bills, schedule future payments, and manage their financial transactions from one place."
+    },
+    {
+      question: "What types of bills can I pay using Dinero-Bill Pay?",
+      answer: "You can pay a variety of bills, including electricity, internet, water, and other utility services directly through the app."
+    },
+    {
+      question: "How does the bill scheduling feature work?",
+      answer: "With the bill scheduling feature, you can set up automatic payments for a future date. Simply select the biller, enter the amount, choose the payment date, and Dinero-Bill Pay will handle the rest."
+    },
+  ]
   return (
-    <div id="faq">
-      <div className={"flex flex-col gap-8 md:gap-0 justify-between w-[90vw] mx-auto lg:flex-row md:mb-12"}>
-        <div>
-          <div className={"py-4 md:py-8 px-3 w-full md:w-[35rem] border-[#00000033] border-t border-b"}>
-            <div className={"flex items-center justify-between"}>
-              <p>What is Dinero billpay?</p>
-              <Image
-                src={"/add.png"}
-                alt='icon'
-                width={24}
-                height={24}
-              />
+    <div id="faq" className="mb-12">
+      <div className={"w-[90vw] mx-auto flex flex-col md:w-auto lg:flex-row gap-16 md:items-center lg:justify-center"}>
+        <div className={""}>
+          {moreFaqData.map((faq, index) => (
+            <div key={index} className={"border-[#00000033] border-b py-1 px-3 lg:w-[35rem]"}>
+              <div className={"flex items-center justify-between"}>
+                <h3 onClick={() => toggleAnswer(index)} className={"cursor-pointer text-[#1C1F35] text-xl font-normal mb-2"}>
+                  {faq.question}
+                </h3>
+                <Image
+                  src={"/add.png"}
+                  alt='icon'
+                  width={16}
+                  height={16}
+                  className={"cursor-pointer"}
+                  onClick={() => toggleAnswer(index)}
+                />
+              </div>
+              {
+                activeIndex === index &&
+                <p className={`text-[#666C89] `}>
+                  {faq.answer}
+                </p>}
             </div>
-          </div>
-          <div className={"py-4 md:py-8 px-3 w-full md:w-[35rem] border-[#00000033] border-t border-b"}>
-            <div className={"flex items-center justify-between"}>
-              <p>Can I reverse a payment made on dinero-billpay?</p>
-              <Image
-                src={"/add.png"}
-                alt='icon'
-                width={24}
-                height={24}
-              />
-            </div>
-          </div>
-          <div className={"py-4 md:py-8 px-3 w-full md:w-[35rem] border-[#00000033] border-t border-b"}>
-            <div className={"flex items-center justify-between"}>
-              <p>What steps are there to reduce the issue of fraud?</p>
-              <Image
-                src={"/add.png"}
-                alt='icon'
-                width={24}
-                height={24}
-              />
-            </div>
-          </div>
+          ))}
           <p className={"inline-flex items-center mt-3 text-dineroBlue underline gap-[0.1rem] cursor-pointer"} onClick={() => setIsOpen(true)}>
             MORE FAQs
             <Image
@@ -346,7 +349,7 @@ export default function Help() {
                 />
                 <div className={"flex flex-col text-[#333]"}>
                   <p> Have any other questions</p>
-                  <Link href={"tel: "}>(00) 112 365 489</Link>
+                  <Link href={"tel: +2349166032718"}>(+234) 916 603 2718</Link>
                 </div>
               </div>
               <nav className={"flex gap-2 items-center"}>
@@ -374,7 +377,7 @@ export default function Help() {
                 </Link>
                 <Link href="/">
                   <Image
-                    src={"/Linkedin-shape.png"}
+                    src={"/LinkedIn-shape.png"}
                     alt="linkedin icon"
                     width={25.2}
                     height={24}

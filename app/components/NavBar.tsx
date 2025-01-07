@@ -19,7 +19,6 @@ export default function NavBar() {
       <nav className="w-[90vw] mx-auto flex items-center justify-between">
         <Link href="/">
           <Image
-            className="dark:invert"
             src="/dinero.png"
             alt="Dinero logo"
             width={80}
@@ -35,10 +34,10 @@ export default function NavBar() {
             <Link href="#faq">FAQs</Link>
           </li>
           <li className="cursor-pointer hover:scale-110">
-            <Link href="/">Contact Us</Link>
+            <Link href="#">Contact Us</Link>
           </li>
           <li>
-            <Link href="/" className="w-44 px-10 py-4 bg-dineroBlue rounded-lg text-white hover:scale-110">
+            <Link href="#" className="w-44 px-10 py-4 bg-dineroBlue rounded-lg text-white hover:scale-110">
               Get The App
             </Link>
           </li>

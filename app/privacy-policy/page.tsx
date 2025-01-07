@@ -9,7 +9,7 @@ export default function PrivacyPolicy() {
                     <div className={"bg-cover mix-blend-multiply rounded-3xl h-[26rem] w-full bg-center bg-[url('/terms.jpg')]"}></div>
                 </div>
 
-                <h1 className={"absolute top-24 w-full text-white text-[4rem] text-center md:top-40"}>Privacy Policy</h1>
+                <h1 className={"absolute top-24 w-full text-white text-[5rem] text-center md:top-40"}>Privacy Policy</h1>
             </div>
 
             <h3 className={"w-[90vw] mx-auto mb-4 text-2xl font-bold"}>Information We Collect</h3>

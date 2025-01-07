@@ -9,7 +9,7 @@ export default function Terms() {
                     <div className={"bg-cover mix-blend-multiply rounded-3xl h-[26rem] w-full bg-center bg-[url('/terms.jpg')]"}></div>
                 </div>
 
-                <h1 className={"absolute top-24 w-full text-white text-[4rem] text-center md:top-40"}>Terms of Use</h1>
+                <h1 className={"absolute top-24 w-full text-white text-[5rem] text-center md:top-40"}>Terms of Use</h1>
             </div>
 
             <h3 className={"w-[90vw] mx-auto mb-4 text-3xl font-bold"}>Acceptance of Terms</h3>
