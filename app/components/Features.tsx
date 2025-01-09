@@ -9,7 +9,7 @@ export default function Features() {
                 Our <span className={"text-dineroBlue"}>Features</span> To You
             </h2>
             <p className={"text-center text-[rgba(0, 0, 0, 0.6)] mb-12 text-base/6"}>
-                These are the features available to you on DineroPay.
+                These are the features available to you on DineroBillPay.
             </p>
 
             <div className={"flex gap-8 flex-col md:flex-row"}>
@@ -17,7 +17,7 @@ export default function Features() {
                     <div className={"md:w-[16rem]"}>
                         <h3 className={"text-[2.5rem]/8 tracking-[0.3px] text-[rgba(51, 51, 51, 1)] mb-6 font-bold"}>Bill Payment</h3>
                         <p className={"text-2xl/7 tracking-[0.3px] text-[rgba(51, 51, 51, 1)] mb-6"}>
-                            DineroPay allows you pay all bills - utility, entertainment, airtime purchase etc - with ease.
+                            Dinero BillPay allows you pay all bills - utility, entertainment, airtime purchase etc - with ease.
                         </p>
                         <div className={"flex items-center gap-3"}>
                             <Link href="/">Learn More</Link>
@@ -52,7 +52,7 @@ export default function Features() {
                         <div className={"w-full lg:w-[33rem]"}>
                             <h3 className={"text-[2.5rem]/8 tracking-[0.3px] text-[rgba(51, 51, 51, 1)] mb-8 font-bold"}>USSD</h3>
                             <p className={"text-2xl/7 tracking-[0.3px] text-[rgba(51, 51, 51, 1)] mb-6"}>
-                                No mobile data? You can still pay your bills on DineroPay with our USSD features.
+                                No mobile data? You can still pay your bills on Dinero BillPay with our USSD features.
                             </p>
                             <div className={"flex items-center gap-3"}>
                                 <Link href="/">Learn More</Link>

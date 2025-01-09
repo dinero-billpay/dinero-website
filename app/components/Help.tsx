@@ -6,7 +6,24 @@ import Link from 'next/link';
 export default function Help() {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const [isOpen, setIsOpen] = useState(false);
-  const [isContactOpen, setIsContactOpen] = useState(false)
+  const [isContactOpen, setIsContactOpen] = useState(false);
+  const [email, setEmail] = useState("");
+
+  function validEmail(email:string) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+    return emailRegex.test(email);
+  };
+
+  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    
+    if(validEmail(email)) {
+      alert(`Email successfully subscribed!`);
+      setEmail("");
+    } else {
+      alert("Please enter a valid email address.");
+    }
+  }
 
   useEffect(() => {
     // Disable scrolling on body when modal is open
@@ -148,13 +165,15 @@ export default function Help() {
           <p className={"text-xl/6 text-[#00000033] mb-8"}>
             Follow our newsletter. We will regularly update you on our latest project and features.
           </p>
-          <form action="" method="post" className={"flex gap-4 md:gap-2 flex-col md:flex-row"}>
+          <form action="" method="post" className={"flex gap-4 md:gap-2 flex-col md:flex-row"} onSubmit={handleSubmit}>
             <input
               type="email"
               name="email"
               id="email"
               placeholder='Enter Your Email'
               className={"w-full md:w-[19.3rem] px-4 py-5 rounded-lg border border-solid"}
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
             />
             <button type="submit" className={"w-36 rounded-lg px-6 py-5 bg-dineroBlue border-0 text-white"}>
               Subscribe
