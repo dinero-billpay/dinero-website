@@ -5,7 +5,7 @@ export default function Steps() {
     return (
         <div className={"w-[90vw] mx-auto mb-24"}>
             <h2 className={"text-center font-bold text-[2.75rem] mb-7"}>
-                <span className={"text-dineroBlue"}>Steps</span> To Using DineroPay
+                <span className={"text-dineroBlue"}>Steps</span> To Using Dinero BillPay
             </h2>
 
             <div className={"relative flex flex-col items-center md:flex-row flex-wrap justify-center gap-0 md:gap-28"}>

@@ -12,10 +12,10 @@ export default function Join() {
             <div className={"absolute w-full top-16 flex flex-col items-center gap-20 md:gap-48"}>
                 <div>
                     <h2 className={"text-center text-white font-bold text-4xl md:text-5xl"}>
-                        Join DineroPay now!
+                        Join Dinero BillPay now!
                     </h2>
                     <p className={"font-semibold text-center text-white"}>
-                        Download the DineroPay app now and enjoy premium bill payment services and more.
+                        Download the Dinero BillPay app now and enjoy premium bill payment services and more.
                     </p>
                 </div>
 
